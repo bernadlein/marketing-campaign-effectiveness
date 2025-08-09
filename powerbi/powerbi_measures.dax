@@ -1,0 +1,28 @@
+// ---------- CORE MEASURES ----------
+Total Impressions = SUM('marketing_campaign_effectiveness'[Impressions])
+Total Clicks = SUM('marketing_campaign_effectiveness'[Clicks])
+Total Conversions = SUM('marketing_campaign_effectiveness'[Conversions])
+Total Spend = SUM('marketing_campaign_effectiveness'[Spend_USD])
+Total Revenue = SUM('marketing_campaign_effectiveness'[Revenue_USD])
+
+CTR % = DIVIDE([Total Clicks], [Total Impressions], 0)
+Conversion Rate % = DIVIDE([Total Conversions], [Total Clicks], 0)
+ROI % = DIVIDE([Total Revenue] - [Total Spend], [Total Spend], 0)
+Cost per Conversion = DIVIDE([Total Spend], [Total Conversions], 0)
+
+// ---------- CHANNEL BREAKDOWNS (EXAMPLES) ----------
+// Use with a Channel slicer or in a matrix to break down by Channel
+Spend by Channel = [Total Spend]
+Revenue by Channel = [Total Revenue]
+Conversions by Channel = [Total Conversions]
+
+// ---------- DATE INTELLIGENCE ----------
+Date Range = 
+VAR MinDate = MIN('marketing_campaign_effectiveness'[Start_Date])
+VAR MaxDate = MAX('marketing_campaign_effectiveness'[End_Date])
+RETURN
+    FORMAT(MinDate, "yyyy-mm-dd") & " to " & FORMAT(MaxDate, "yyyy-mm-dd")
+
+// ---------- DISPLAY FORMATS (set in Model formatting) ----------
+// CTR %, Conversion Rate %, ROI %   -> Percentage with 1–2 decimals
+// Cost per Conversion, Spend, Revenue -> Currency $ or your local currency

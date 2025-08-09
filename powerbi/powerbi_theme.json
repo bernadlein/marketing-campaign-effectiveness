@@ -1,0 +1,42 @@
+{
+  "name": "Minimal Clean",
+  "textClasses": {
+    "title": {
+      "fontSize": 18,
+      "fontFamily": "Segoe UI Semibold"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFamily": "Segoe UI"
+    },
+    "callout": {
+      "fontSize": 12,
+      "fontFamily": "Segoe UI"
+    },
+    "label": {
+      "fontSize": 11,
+      "fontFamily": "Segoe UI"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "border": [
+          {
+            "show": false
+          }
+        ],
+        "title": [
+          {
+            "show": true
+          }
+        ],
+        "labels": [
+          {
+            "show": true
+          }
+        ]
+      }
+    }
+  }
+}
