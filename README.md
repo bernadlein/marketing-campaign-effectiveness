@@ -16,24 +16,8 @@ A complete, ready-to-run portfolio project for Data Analyst roles. It compares *
 - **Conversion Rate%** = Conversions/Clicks
 - **Cost per Conversion** = Spend/Conversions
 
-## 🔧 Run locally (Python)
-```bash
-# 1) Create venv and install deps
-python -m venv .venv && . .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-
-# 2) Generate charts
-python analytics/analysis.py
-
-# 3) Launch the app
-streamlit run app.py
-```
-
-## 🧠 Power BI
-Open `marketing_campaign_effectiveness.csv` in Power BI, paste M and DAX from `powerbi/` per instructions in `POWERBI_README.md` (also included in your downloads).
-
 ## 🔗 Live Demo (Hugging Face Spaces)
-You can deploy `app.py` to a Space for a shareable live demo of your analysis. See **Deploy to Hugging Face** below.
+https://huggingface.co/spaces/bernadlein/marketing-campaign-effectivenessv2
 
 ## 📷 Preview
 ![ROI by Channel](images/roi_by_channel.png)
@@ -60,3 +44,5 @@ marketing-campaign-effectiveness/
 ├── .gitignore
 ├── LICENSE
 └── README.md
+
+PORTO BY BERNADUS BOLI
