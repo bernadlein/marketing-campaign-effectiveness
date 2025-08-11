@@ -45,4 +45,11 @@ marketing-campaign-effectiveness/
 ├── LICENSE
 └── README.md
 
-PORTO BY BERNADUS BOLI
+## 📊 KPIs
+- **ROI%** = (Revenue - Spend)/Spend
+- **CTR%** = Clicks/Impressions
+- **Conversion Rate%** = Conversions/Clicks
+```
+## PORTOFOLIO BY BERNADUS BOLI
+## Leinsgreenadz@gmail.com
+
